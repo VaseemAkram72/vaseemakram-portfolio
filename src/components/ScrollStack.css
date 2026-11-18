@@ -1,0 +1,38 @@
+
+.scroll-stack-scroller {
+  position: relative;
+  z-index: 0;
+  isolation: isolate;
+  width: 100%;
+  overflow: visible;
+}
+
+.scroll-stack-inner {
+  position: relative;
+  width: 100%;
+  padding-top: 4vh;
+  padding-bottom: 85vh;
+}
+
+.scroll-stack-card {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  transform-origin: top center;
+  will-change: transform, filter;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.scroll-stack-end {
+  width: 100%;
+  height: 1px;
+}
+
+@media (max-width: 768px) {
+  .scroll-stack-inner {
+    padding-bottom: 85vh;
+  }
+}
